@@ -1,7 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+## The following pair of functions will invert a matrix and return the inverted matrix. 
+## To work properly, the "makeCacheMatrix" function should be used to assign the special
+## vector to an object. Then that object should be the input argument to the "cacheSolve"
+## function. 
 
-## Write a short comment describing this function
+## This function creates a special "matrix" object that can cache its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
@@ -18,7 +20,11 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function computes the inverse of the special 
+## "matrix" returned by makeCacheMatrix above. If the 
+## inverse has already been calculated (and the matrix 
+## has not changed), then the cachesolve should retrieve 
+## the inverse from the cache
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
